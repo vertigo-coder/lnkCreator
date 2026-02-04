@@ -26,7 +26,7 @@ python -m lnkCreator -o secret.lnk -i txt --debug
 Encode your command in PowerShell and replace the `encoded_command` variable in the script.
 ```powershell
 $command = 'your-command-here'
-$bytes = [System.Text.Encoding]::UTF16.GetBytes($command)
+$bytes = [System.Text.Encoding]::UTF8.GetBytes($command)
 [Convert]::ToBase64String($bytes)
 ```
 **Disclaimer:** For authorized security testing only.
