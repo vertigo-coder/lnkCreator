@@ -29,4 +29,3 @@ $command = 'your-command-here'
 $bytes = [System.Text.Encoding]::UTF8.GetBytes($command)
 [Convert]::ToBase64String($bytes)
 ```
-**Disclaimer:** For authorized security testing only.
